@@ -7,19 +7,19 @@ import java.util.Scanner;
 public class MinimumElementArray {
     public static void main(String[] args){
 
-        int[] userArray = readIntegers(5);          // here we call the readIntegers method with a length, and give it a reference name.
+        int[] userArray = readIntegers();          // here we call the readIntegers method, and give it a reference name.
         System.out.println(Arrays.toString(userArray));     // prints the userArray entered by the user, using the Arrays.toString method.
         System.out.println("The minimum element is: " + findMin(userArray));    // Here we call the findMin method in the print statement to return the minimum element from the array.
     }
 
     // This method takes in user input through the scanner class instance, and then puts it in the array. so we get a user entered array to work with.
-    public static int[] readIntegers(int length){
+    public static int[] readIntegers(){
         Scanner scanner = new Scanner(System.in);               // we create a new instance of the Scanner class, which will take the input.
         System.out.println("Enter a list of integers, separated by commas: ");      // This is a print statement that will print the prompt on the console to enter numbers separated by commas.
         String input = scanner.nextLine();      // scanner.nextLine() will store the entire string input by the user into a String variable input.
 
         String[] sArray = input.split(",");     // Then we create a String array, and then use the String class method split based on the delimiter ",". which will split the String in parts where it finds a comma.
-        int[] inputArray = new int[length];             // We instantiate an array with the length given to us in the argument.
+        int[] inputArray = new int[sArray.length];             // We instantiate an array with the same length as the String array.
         for(int i = 0; i < inputArray.length; i++){     // We iterate through the integer array, element by element
             inputArray[i] = Integer.parseInt(sArray[i]);    // we assign each inputArray element to a corresponding element from the String array.
                                                             // i.e. Assigning index 0 of integerArray tha value stored in index 0 of String array.
