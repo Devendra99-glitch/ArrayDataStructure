@@ -1,6 +1,15 @@
 import java.util.Arrays;
 import java.util.Random;
 
+// Program using arrays that sorts a list of integers in descending order. Descending order means from highest to lowest.
+// Steps of doing that:
+// First, create an array of randomly generated integers.
+// Print the array before we sort it.
+// Sort the array in ascending order using the Arrays.sort method.
+// Print the array after we sort it.
+// Then create a method to sort the array in descending order and pass the sorted array to it.
+// print the array in descending order.
+
 public class SortingArrayDescendingOrder {
     public static void main(String[] args){
 
