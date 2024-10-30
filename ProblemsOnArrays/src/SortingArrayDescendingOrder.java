@@ -16,8 +16,6 @@ public class SortingArrayDescendingOrder {
         // Calling the method to generate a random Array
         int[] unsortedArray = getRandom(5);
         System.out.println("Unsorted Array: " + Arrays.toString(unsortedArray));    // printing the random array that is generated which will be unsorted.
-        Arrays.sort(unsortedArray);                                                 // method to sort the array, we don't need to use this method to sort in ascending order, we can directly call the sortIntegers method
-        System.out.println("Sorted array in Ascending order: " + Arrays.toString(unsortedArray));   // printing the sorted array
         int[] descendingArray = sortIntegers(unsortedArray);                                        // calling the method for sorting the array in descending order
         System.out.println("Array in descending order: " + Arrays.toString(descendingArray));       // prints out the array sorted in descending order.
 
