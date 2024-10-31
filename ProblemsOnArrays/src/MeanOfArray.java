@@ -1,6 +1,7 @@
 // Finding the mean of an array
 // As we know the formula for mean is sum of all numbers divided by the total number of numbers.
 // Converting this formula for arrays, we get, mean = sum of all elements / total number of elements.
+// For calculating the mean, it doesn't matter if the array is sorted or not.
 
 
 import java.util.Arrays;
