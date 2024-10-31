@@ -19,7 +19,7 @@ public class MedianOfAnArray {
         System.out.println("Sorted array: " + Arrays.toString(array));         // printing the sorted array
         int n = array.length;               // then we store the length of the array in a variable n
         if(n % 2 == 0){                     // then we check if the length of the array is even
-            return (array[n-1]/2 + array[n/2]) / 2.0d;      // if length of the array is even then we return the average of the two middle elements.
+            return (array[(n-1)/2] + array[n/2]) / 2.0d;      // if length of the array is even then we return the average of the two middle elements.
                                                             // [n-1]/2 will give the left middle index. and n/2 will give the right middle number.
         }else{                              // or else if the length of the array is odd
             return array[n/2];              // then [n/2] returns the middle index of the array.
